@@ -1,0 +1,48 @@
+🧠 Why This Is Important
+
+Imagine transferring money between two banks:
+
+Without coordination:
+Bank A ✔ Money Debited
+Bank B ❌ Money Not Credited
+
+❌ Inconsistent State
+
+With Two-Phase Commit:
+
+          Coordinator
+               │
+     ┌─────────┴─────────┐
+     ▼                   ▼
+ Service A          Service B
+   Prepare            Prepare
+     │                   │
+     └─────────┬─────────┘
+               ▼
+         Commit / Rollback
+
+Benefits:
+✅ Atomic transactions
+✅ Data consistency
+✅ Coordinated commits
+✅ Reliable distributed systems
+
+Used By :
+MySQL XA Transactions
+PostgreSQL Two-Phase Commit
+Oracle Distributed Transactions
+Enterprise Banking Systems
+ERP Platforms
+
+🛠 Tech Stack
+Python
+Flask
+Random
+
+📂 Project Structure
+two-phase-commit-demo/
+│
+├── app.py
+├── coordinator.py
+├── requirements.txt
+└── README.md
