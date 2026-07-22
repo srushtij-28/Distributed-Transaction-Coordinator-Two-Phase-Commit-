@@ -1,0 +1,12 @@
+Coordinator
+      │
+      ▼
+Prepare Phase
+      │
+      ▼
+All Participants Ready?
+      │
+   ┌──┴──┐
+ Yes    No
+  │      │
+Commit Rollback
